@@ -1,4 +1,7 @@
-
+// Logotip
+document.getElementById("mobil_logotip").innerHTML = "Uralbek UZ";
+document.getElementById("medium_logotip").innerHTML = "Uralbek UZ";
+document.getElementById("desktop_logotip").innerHTML = "Uralbek UZ";
 
 // Display eslatmasi
 document.getElementById("mobil_eslatma").innerHTML = "Veb-sahifaning mobil versiyasidan foydalanyapsiz,<br>medium yoki desktop versiyani ko‘rish uchun ekran o‘lchamini o‘zgartiring!";
