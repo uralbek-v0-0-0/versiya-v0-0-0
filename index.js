@@ -12,7 +12,7 @@ document.getElementById("desktop_eslatma").innerHTML = "Veb-sahifaning desktop (
 
 
 
-/
+// Menyu Script
 function ochish() {
   document.getElementById("mySidebar").style.display = "block";
 }
