@@ -1,5 +1,5 @@
 document.getElementById("mobil_logotip").innerHTML = "Uralbek UZ";
-
+document.getElementById("mobil_eslatma").innerHTML = "";
 
 
 
