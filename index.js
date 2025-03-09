@@ -1,1 +1,1 @@
-document.getElementById("").innerHTML = "";
+document.getElementById("mobil_logotip").innerHTML = "Uralbek UZ";
