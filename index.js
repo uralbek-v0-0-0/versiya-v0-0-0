@@ -10,7 +10,7 @@ document.getElementById("medium_eslatma").innerHTML = "Veb-sahifaning medium (pl
 
 //Desktop DOM
 document.getElementById("desktop_logotip").innerHTML = "Uralbek UZ";
-document.getElementById("desktop_eslatma").innerHTML = "Veb-sahifaning desktop (katta ekranli) versiyasidan foydalanyapsiz,<br>mobil yoki medium versiyani ko‘rish uchun ekran o‘lchamini o‘zgartiring!";
+document.getElementById("desktop_eslatma").innerHTML = "Veb-sahifaning desktop (katta ekranli) versiyasidan foydalanyapsiz.<br>Mobil yoki medium versiyani ko‘rish uchun ekran o‘lchamini o‘zgartiring!";
 
 
 
