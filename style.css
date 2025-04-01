@@ -23,5 +23,5 @@ title {
 #mobil_menu,#mobil_logotip{color:#02A4D3;font-family:"Oswald";font-weight:bold;-webkit-user-select:none;-ms-user-select:none;user-select:none}
 
 html {
-    transform-origin: ;
+    transform-origin: center center;
 }
