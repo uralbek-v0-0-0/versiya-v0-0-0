@@ -13,7 +13,6 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{tex
 }
 #mobil_header {
     padding-top: 5.4px;
-    padding-left: 20px;
     padding-bottom: 4.8px;
 }
 #mobil_logotip {
@@ -21,6 +20,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{tex
     color: #02A4D3;
     font-family: "Oswald";
     font-weight: bold;
+    padding-left: 20px;
     -webkit-user-select:none;
     -ms-user-select:none;
     user-select:none;
