@@ -9,8 +9,8 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{tex
 #mobil_logotip{color:#02A4D3;font-family:"Oswald";font-weight:bold;-webkit-user-select:none;-ms-user-select:none;user-select:none}
 #mavzu {
     background: #CDF7FF;
-    border-bottom: 1px solid #297B9A;
     border-radius: 0 0 30% 0;
+    border-bottom: 1px solid #297B9A;
 }
 #mavzu_text {
     padding-left: 24px;
