@@ -16,6 +16,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{tex
     padding-bottom: 12px;
     font-weight: bold;
     color: #297B9A;
+    border: 1px solid #297B9A;
 }
 
 
