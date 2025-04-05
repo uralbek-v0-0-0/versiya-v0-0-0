@@ -24,8 +24,8 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{tex
     border-top: 1px solid #297B9A;
     border-left: 1px solid #297B9A;
     border-right: 1px solid #297B9A;
-    border-bottom: 1px solid #297B9A;
     border-bottom: 2px solid #000;
+    border-bottom: 1px solid #297B9A;
 }
 .Galereya {
     font-size: 24px;
