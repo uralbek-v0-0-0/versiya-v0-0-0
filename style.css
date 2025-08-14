@@ -1,12 +1,12 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 html{background:#fff}a{text-decoration: none}
-#header {
+/* #header {
     text-align: center;
     font-size: 36px;
     color: #02a4d3;
     font-family: "Oswald";
-}
+} */
 
 .tugma {
     background: #110C6C;
