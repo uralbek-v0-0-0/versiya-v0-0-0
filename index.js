@@ -1,1 +1,1 @@
-document.getElementById("").innerHTML = "Uralbek UZ";
+document.getElementById("logotip").innerHTML = "Uralbek UZ";
