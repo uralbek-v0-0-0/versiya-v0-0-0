@@ -25,7 +25,7 @@
 
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
 <div id="sidebar_color"><br><br><br><br>
-<b id="soat"></b>
+<b id="txt"></b>
 <br><br>
 
 </div>
@@ -96,5 +96,22 @@ function w3_open() {
 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
+}
+
+function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        
+        document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
 }
 </script>
