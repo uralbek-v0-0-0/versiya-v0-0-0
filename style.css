@@ -4,4 +4,5 @@
 .desktop_logo {
     border: 1px solid red;
     border-radius: 50%;
+    align-items: center;
 }
