@@ -1,8 +1,3 @@
 document.getElementById("logotip").innerHTML = "Uralbek.UZ";
 
-document.getElementById("yonmenyu").innerHTML = '<div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar"><div class="w3-container"><h3>Uralbek UZ</h3></div></div><div class="w3-hide-small w3-hide-medium">
-<div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;right:0" id="mySidebar">
-<div class="w3-container">
-    <h3>Uralbek UZ</h3>
-</div>
-</div>';
+document.getElementById("yonmenyu").innerHTML = '<div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar"><div class="w3-container"><h3>Uralbek UZ</h3></div></div><div class="w3-hide-small w3-hide-medium"><div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;right:0" id="mySidebar"><div class="w3-container"><h3>Uralbek UZ</h3></div></div>';
