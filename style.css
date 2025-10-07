@@ -9,7 +9,7 @@
 }
 
 
-#telegram {
+a#telegram {
     padding: 4px 24px;
     margin: 15px;
     border-radius: 50px;
@@ -19,7 +19,7 @@
     font-weight: bold;
     text-decoration: none;
 }
-#instagram {
+a#instagram {
     padding: 4px 22px;
     margin: 15px;
     border-radius: 50px;
