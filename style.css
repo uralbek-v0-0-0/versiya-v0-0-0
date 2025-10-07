@@ -15,7 +15,7 @@
     border-radius: 50px;
     background: #24a1de;
     color: #fff;
-    font-size: 16px;
+    font-sizce: 16px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -23,6 +23,10 @@
     padding: 4px 24px;
     margin-bottom: 5px;
     border-radius: 50px;
+    color: #fff;
+    font-sizce: 16px;
+    font-weight: bold;
+    text-decoration: none;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
           /* Also define standard property for compatibility */
