@@ -11,7 +11,7 @@
 
 a#telegram {
     margin-top: 8px;
-    padding: 4px 24px;
+    padding: 2px 24px;
     border-radius: 50px;
     background: #24a1de;
     color: #fff;
@@ -21,7 +21,7 @@ a#telegram {
 }
 a#instagram {
     margin-top: 8px;
-    padding: 4px 22px;
+    padding: 2px 22px;
     border-radius: 50px;
     color: #fff;
     font-sizce: 16px;
