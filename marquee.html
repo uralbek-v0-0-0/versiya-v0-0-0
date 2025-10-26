@@ -1,49 +1,160 @@
 
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
 <meta charset="UTF-8">
-<title>Yozuv animatsiyasi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML5 Teglar Jadvali</title>
 <style>
   body {
-    background: #111;
+    font-family: "Segoe UI", sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    margin: 40px;
+  }
+  h1 {
+    text-align: center;
     color: #00ff99;
-    font-family: 'Courier New', monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
-
-  .yozuv {
-    font-size: 20px;
-    border-right: 2px solid #00ff99; /* miltillovchi kursor */
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: yozish 2s steps(90, end) forwards,
-               kursor 1s step-end infinite;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
   }
-
-  /* Harflarni ketma-ket chiqarish */
-  @keyframes yozish {
-    from { width: 0; }
-    to { width: 1000px; } /* yozuv uzunligiga qarab moslang */
+  th, td {
+    border: 1px solid #30363d;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
   }
-
-  /* Kursor miltillashi */
-  @keyframes kursor {
-    from, to { border-color: transparent; }
-    50% { border-color: #00ff99; }
+  th {
+    background-color: #161b22;
+    color: #00ff99;
+    font-size: 18px;
+  }
+  tr:nth-child(even) {
+    background-color: #161b22;
+  }
+  tr:hover {
+    background-color: #21262d;
+  }
+  code {
+    background: #222;
+    color: #00ffcc;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
   }
 </style>
 </head>
 <body>
 
-<div class="yozuv">
-  💡 Veb sahifa test rejimida ishlamoqda...
-  💡 Veb sahifa test rejimida ishlamoqda...
-</div>
+<h1>🧱 HTML5 Teglar Jadvali</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Teg nomi</th>
+      <th>Vazifasi / Tushuntiruv</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>&lt;a&gt;</code></td><td>Gipermurojaat (link) yaratadi</td></tr>
+    <tr><td><code>&lt;abbr&gt;</code></td><td>Qisqartmalarni belgilaydi</td></tr>
+    <tr><td><code>&lt;address&gt;</code></td><td>Manzil yoki muallif ma’lumoti</td></tr>
+    <tr><td><code>&lt;area&gt;</code></td><td>Rasm xaritasida faol soha</td></tr>
+    <tr><td><code>&lt;article&gt;</code></td><td>Mustaqil maqola yoki bo‘lim</td></tr>
+    <tr><td><code>&lt;aside&gt;</code></td><td>Yon panel yoki qo‘shimcha ma’lumot</td></tr>
+    <tr><td><code>&lt;audio&gt;</code></td><td>Audio fayllarni joylashtirish</td></tr>
+    <tr><td><code>&lt;b&gt;</code></td><td>Matnni qalin qiladi</td></tr>
+    <tr><td><code>&lt;base&gt;</code></td><td>URL manzillari uchun asos belgilaydi</td></tr>
+    <tr><td><code>&lt;blockquote&gt;</code></td><td>Iqtibos (katta sitata) yaratadi</td></tr>
+    <tr><td><code>&lt;body&gt;</code></td><td>Asosiy kontent bo‘limi</td></tr>
+    <tr><td><code>&lt;br&gt;</code></td><td>Yangi satrga o‘tish</td></tr>
+    <tr><td><code>&lt;button&gt;</code></td><td>Tugma yaratadi</td></tr>
+    <tr><td><code>&lt;canvas&gt;</code></td><td>Grafika chizish (JS bilan)</td></tr>
+    <tr><td><code>&lt;caption&gt;</code></td><td>Jadval sarlavhasi</td></tr>
+    <tr><td><code>&lt;cite&gt;</code></td><td>Asar yoki manba nomi</td></tr>
+    <tr><td><code>&lt;code&gt;</code></td><td>Dastur kodi qismini ko‘rsatadi</td></tr>
+    <tr><td><code>&lt;col&gt;</code></td><td>Jadval ustunini belgilaydi</td></tr>
+    <tr><td><code>&lt;colgroup&gt;</code></td><td>Ustunlarni guruhlaydi</td></tr>
+    <tr><td><code>&lt;data&gt;</code></td><td>Ma’lumotni mashina o‘qiy oladigan qiymat bilan bog‘laydi</td></tr>
+    <tr><td><code>&lt;datalist&gt;</code></td><td><code>&lt;input&gt;</code> uchun variantlar ro‘yxati</td></tr>
+    <tr><td><code>&lt;dd&gt;</code></td><td>Ta’rif qiymati (description definition)</td></tr>
+    <tr><td><code>&lt;del&gt;</code></td><td>O‘chirilgan matnni ko‘rsatadi</td></tr>
+    <tr><td><code>&lt;details&gt;</code></td><td>Yashirin/ochiladigan blok</td></tr>
+    <tr><td><code>&lt;dfn&gt;</code></td><td>Atama ta’rifi</td></tr>
+    <tr><td><code>&lt;dialog&gt;</code></td><td>Dialog oynasi (popup)</td></tr>
+    <tr><td><code>&lt;div&gt;</code></td><td>Umumiy konteyner</td></tr>
+    <tr><td><code>&lt;dl&gt;</code></td><td>Ta’riflar ro‘yxati</td></tr>
+    <tr><td><code>&lt;dt&gt;</code></td><td>Ta’rif nomi</td></tr>
+    <tr><td><code>&lt;em&gt;</code></td><td>Urg‘u bilan yozilgan matn</td></tr>
+    <tr><td><code>&lt;embed&gt;</code></td><td>Tashqi media faylni kiritadi</td></tr>
+    <tr><td><code>&lt;fieldset&gt;</code></td><td>Forma elementlarini guruhlaydi</td></tr>
+    <tr><td><code>&lt;figcaption&gt;</code></td><td>Rasm sarlavhasi</td></tr>
+    <tr><td><code>&lt;figure&gt;</code></td><td>Rasm yoki grafik obyekt konteyneri</td></tr>
+    <tr><td><code>&lt;footer&gt;</code></td><td>Pastki qism (footer)</td></tr>
+    <tr><td><code>&lt;form&gt;</code></td><td>Ma’lumot kiritish shakli</td></tr>
+    <tr><td><code>&lt;h1&gt;–&lt;h6&gt;</code></td><td>Sarlavha darajalari</td></tr>
+    <tr><td><code>&lt;head&gt;</code></td><td>Metadata bo‘limi</td></tr>
+    <tr><td><code>&lt;header&gt;</code></td><td>Yuqori qism</td></tr>
+    <tr><td><code>&lt;hr&gt;</code></td><td>Gorizontal chiziq</td></tr>
+    <tr><td><code>&lt;html&gt;</code></td><td>Ildiz element</td></tr>
+    <tr><td><code>&lt;i&gt;</code></td><td>Kursiv matn</td></tr>
+    <tr><td><code>&lt;iframe&gt;</code></td><td>Ichki sahifa (frame)</td></tr>
+    <tr><td><code>&lt;img&gt;</code></td><td>Rasm joylashtirish</td></tr>
+    <tr><td><code>&lt;input&gt;</code></td><td>Kirish maydoni</td></tr>
+    <tr><td><code>&lt;ins&gt;</code></td><td>Kiritilgan (yangi) matn</td></tr>
+    <tr><td><code>&lt;kbd&gt;</code></td><td>Klaviatura kiritmasi</td></tr>
+    <tr><td><code>&lt;label&gt;</code></td><td>Forma yorlig‘i</td></tr>
+    <tr><td><code>&lt;legend&gt;</code></td><td>Fieldset sarlavhasi</td></tr>
+    <tr><td><code>&lt;li&gt;</code></td><td>Ro‘yxat elementi</td></tr>
+    <tr><td><code>&lt;link&gt;</code></td><td>Tashqi faylga bog‘lanish (masalan CSS)</td></tr>
+    <tr><td><code>&lt;main&gt;</code></td><td>Asosiy kontent</td></tr>
+    <tr><td><code>&lt;map&gt;</code></td><td>Rasm xaritasi konteyneri</td></tr>
+    <tr><td><code>&lt;mark&gt;</code></td><td>Ajratilgan (highlighted) matn</td></tr>
+    <tr><td><code>&lt;meta&gt;</code></td><td>Metadata (tavsif, kodlash)</td></tr>
+    <tr><td><code>&lt;meter&gt;</code></td><td>O‘lchov yoki progress qiymati</td></tr>
+    <tr><td><code>&lt;nav&gt;</code></td><td>Navigatsiya bo‘limi</td></tr>
+    <tr><td><code>&lt;noscript&gt;</code></td><td>JS o‘chirilgan holatda chiqadigan kontent</td></tr>
+    <tr><td><code>&lt;object&gt;</code></td><td>Multimedia obyekt joylashtirish</td></tr>
+    <tr><td><code>&lt;ol&gt;</code></td><td>Tartiblangan ro‘yxat</td></tr>
+    <tr><td><code>&lt;option&gt;</code></td><td>Tanlov elementi</td></tr>
+    <tr><td><code>&lt;output&gt;</code></td><td>Natijani chiqarish</td></tr>
+    <tr><td><code>&lt;p&gt;</code></td><td>Paragraf</td></tr>
+    <tr><td><code>&lt;pre&gt;</code></td><td>Formatlangan matn</td></tr>
+    <tr><td><code>&lt;progress&gt;</code></td><td>Jarayon holatini ko‘rsatadi</td></tr>
+    <tr><td><code>&lt;q&gt;</code></td><td>Qisqa iqtibos</td></tr>
+    <tr><td><code>&lt;s&gt;</code></td><td>Chiziq tortilgan matn</td></tr>
+    <tr><td><code>&lt;samp&gt;</code></td><td>Dastur chiqishi (output) matni</td></tr>
+    <tr><td><code>&lt;script&gt;</code></td><td>JavaScript kodi</td></tr>
+    <tr><td><code>&lt;section&gt;</code></td><td>Ma’noli bo‘lim</td></tr>
+    <tr><td><code>&lt;select&gt;</code></td><td>Tanlov oynasi (dropdown)</td></tr>
+    <tr><td><code>&lt;small&gt;</code></td><td>Kichik matn</td></tr>
+    <tr><td><code>&lt;span&gt;</code></td><td>Inline element konteyneri</td></tr>
+    <tr><td><code>&lt;strong&gt;</code></td><td>Urg‘u bilan ajratilgan qalin matn</td></tr>
+    <tr><td><code>&lt;style&gt;</code></td><td>Ichki CSS kodi</td></tr>
+    <tr><td><code>&lt;sub&gt;</code></td><td>Past indeks (H₂O kabi)</td></tr>
+    <tr><td><code>&lt;sup&gt;</code></td><td>Yuqori indeks (x² kabi)</td></tr>
+    <tr><td><code>&lt;table&gt;</code></td><td>Jadval yaratadi</td></tr>
+    <tr><td><code>&lt;tbody&gt;</code></td><td>Jadval tanasi</td></tr>
+    <tr><td><code>&lt;td&gt;</code></td><td>Jadval katakchasi (ma’lumot)</td></tr>
+    <tr><td><code>&lt;template&gt;</code></td><td>HTML shablon</td></tr>
+    <tr><td><code>&lt;textarea&gt;</code></td><td>Ko‘p qatorli matn maydoni</td></tr>
+    <tr><td><code>&lt;tfoot&gt;</code></td><td>Jadval pastki qismi</td></tr>
+    <tr><td><code>&lt;th&gt;</code></td><td>Jadval sarlavha katakchasi</td></tr>
+    <tr><td><code>&lt;thead&gt;</code></td><td>Jadval yuqori qismi</td></tr>
+    <tr><td><code>&lt;time&gt;</code></td><td>Vaqt yoki sana</td></tr>
+    <tr><td><code>&lt;title&gt;</code></td><td>Sahifa sarlavhasi</td></tr>
+    <tr><td><code>&lt;tr&gt;</code></td><td>Jadval qatori</td></tr>
+    <tr><td><code>&lt;u&gt;</code></td><td>Tagiga chizilgan matn</td></tr>
+    <tr><td><code>&lt;ul&gt;</code></td><td>Tartiblanmagan ro‘yxat</td></tr>
+    <tr><td><code>&lt;var&gt;</code></td><td>O‘zgaruvchi (variable)</td></tr>
+    <tr><td><code>&lt;video&gt;</code></td><td>Video faylni joylashtirish</td></tr>
+    <tr><td><code>&lt;wbr&gt;</code></td><td>Satrni ajratish nuqtasi</td></tr>
+  </tbody>
+</table>
 
 </body>
 </html>
