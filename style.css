@@ -89,4 +89,5 @@ marquee {
     margin: 0;
     font-size: 12px;
     background: #fff;
+    border-top: 0.50px solid #777;
 }
