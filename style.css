@@ -2,12 +2,6 @@
      bit.ly/uralbek */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}body{margin:0}a{text-decoration:none}
-marquee {
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    font-size: 8px;
-}
 
 /*  Desktop  */
 #ds_top {
@@ -88,4 +82,11 @@ a#youtube {
     font-sizce: 16px;
     font-weight: bold;
     text-decoration: none;
+}
+
+marquee {
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
 }
