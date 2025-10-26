@@ -5,7 +5,8 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}bod
 
 /*  Desktop  */
 #dst_top {
-    
+    position: fixed;
+    top: ;
 }
 
 
