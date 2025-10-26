@@ -1,81 +1,48 @@
 
-
 <!DOCTYPE html>
 <html lang="uz">
 <head>
 <meta charset="UTF-8">
-<title>Test rejimi</title>
+<title>Yozuv animatsiyasi</title>
 <style>
-  .aylanayotgan-matn {
-    width: 100%;
-    height: 30px;
-    overflow: hidden;
-    font-size: 20px;
+  body {
+    background: #111;
+    color: #00ff99;
+    font-family: 'Courier New', monospace;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
-  .aylanayotgan-matn span {
-    display: inline-block;
-    animation: vertikal 5s linear infinite;
+  .yozuv {
+    font-size: 24px;
+    border-right: 2px solid #00ff99; /* miltillovchi kursor */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: yozish 4s steps(40, end) infinite alternate,
+               kursor 0.7s step-end infinite;
   }
 
-  @keyframes vertikal {
-    0% { transform: translateY(100%); }
-    100% { transform: translateY(-100%); }
+  /* Harflarni ketma-ket chiqarish */
+  @keyframes yozish {
+    from { width: 0; }
+    to { width: 360px; } /* yozuv uzunligiga qarab moslang */
+  }
+
+  /* Kursor miltillashi */
+  @keyframes kursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff99; }
   }
 </style>
 </head>
 <body>
 
-<div class="aylanayotgan-matn">
-  <span>💡 Veb sahifa test rejimida ishlamoqda... 💡</span>
+<div class="yozuv">
+  💡 Veb sahifa test rejimida ishlamoqda...
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-<!---
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-<meta charset="UTF-8">
-<title>Test rejimi</title>
-<style>
-  .aylanayotgan-matn {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    font-size: 20px;
-    padding: 10px 0;
-  }
-
-  .aylanayotgan-matn span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: aylanish 10s linear infinite;
-  }
-
-  @keyframes aylanish {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-  }
-</style>
-</head>
-<body>
-
-<div class="aylanayotgan-matn">
-  <span>💡 Veb sahifa test rejimida ishlamoqda... 💡</span>
-</div>
-
-</body>
-</html> --->
