@@ -4,7 +4,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}body{margin:0}a{text-decoration:none}
 
 /*  Desktop  */
-#dcp_top {
+#ds_top {
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -13,7 +13,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}bod
     box-shadow:0 4px 4px 0 rgba(0,0,0,0.12),0 4px 4px 0 rgba(0,0,0,0.20)
 }
 
-#dcp_header
+#ds_header
 
 
 
