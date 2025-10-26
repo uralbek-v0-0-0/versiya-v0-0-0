@@ -85,8 +85,8 @@ a#youtube {
 }
 
 marquee {
-    bottom: 0;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 12px;
+    background: #fff;
 }
