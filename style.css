@@ -44,5 +44,6 @@ div#media{
 }
 b#media{
     text-align: center;
-    f
+    font-size: 28px;
+    color: red;
 }
