@@ -1,2 +1,0 @@
-document.getElementById("image").innerHTML = "<img class='desktop_logo' src='uralbek.ico' alt='logotip' width='70px'>";
-document.getElementById("astronom").innerHTML = "Astronomiya bu lotincha so‘z bo‘lib";
