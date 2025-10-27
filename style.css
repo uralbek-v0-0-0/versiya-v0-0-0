@@ -6,5 +6,7 @@ body{margin:0}a{text-decoration:none}
 #ds_top{
     position: fixed;
     width: 100%;
+    z-index: 1;
+    background: #fff;
     
 }
