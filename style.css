@@ -1,7 +1,7 @@
 /* Uralbek UZ | v0.0.0 | 27-oct 2025 */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}
-body{margin:0}a{text-decoration:none}svg{padding:0;ma
+body{margin:0}a{text-decoration:none}svg{padding:0;margin:0}
 /* =============== DS Desktop ================ */
 #ds_top{
     position: fixed;
