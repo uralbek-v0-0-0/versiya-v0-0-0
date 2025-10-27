@@ -4,5 +4,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}
 body{margin:0}a{text-decoration:none}
 /* =============== DS Desktop ================ */
 #ds_top{
-    position: ;
+    position: fixed;
+    width: 100%;
+    
 }
