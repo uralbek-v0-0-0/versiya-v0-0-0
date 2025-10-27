@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <path d="M0 0h512v512H0z"/>
-  <!-- Quyida sizning rasmga tegishli kontur path’lari joylashgan -->
-  <path d="M123 456L...Z"/>
-  <path d="M...Z"/>
-</svg>
