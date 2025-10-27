@@ -1,0 +1,133 @@
+<!-- Uralbek UZ • v0.0.0 • 8-avg 2025 -->
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Birinchi, Bepul, Onlayn, Xususiy baza, Uralbek UZ">
+<meta name="description" content="Izlagan imkon topadi, izlamagan bahona">
+<meta name="author" content="Uralbek Tursunov">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="google-site-verification" content="sx8Ws5PGRnl8jdPe5ZSQU6JfL6yUlLJL5WihwrM2hrA">
+<meta http-equiv="refresh" content="3600">
+<title>Uralbek UZ</title>
+<link rel="icon" type="x-icon" href="uralbek.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://css-uralbek.netlify.app/style.css">
+<link rel="stylesheet" href="style.css">
+<style>@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+</style>
+</head>
+<body onload="startTime()">
+<!--Mobil versiya-->
+<div class="w3-hide-medium w3-hide-large">
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:230px;" id="mySidebar">
+<div id="sidebar_color"><br><br><br><br>
+<b id="txt"></b><br><br style="padding:0"></div>
+<svg style="background-color:#fff;margin-top:-8px" width="100%" height="50" viewbox="0 0 100 100" preserveAspectRatio="none">
+  <path id="wavepath" d="M0,0  L125,0C50,200 50,0 0,100z" fill="#8EB0AF">
+</svg>
+
+
+</div>
+
+
+<div id="top">
+<div id="header" class="w3-main" style="margin-left:200px">
+    <b id="menu" onclick="w3_open()">&#9776;</b>
+    <b id="logotip"></b>
+</div></div>
+
+<br /><br /><br />
+
+<div class="w3-container w3-center">
+    <img src="inc.svg" width="100" alt="svg"><br />
+    <a href="confic.html">Confic Litsenziyasi</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--Planshet versiya-->
+<div class="w3-hide-small w3-hide-large">
+    
+</div>
+
+
+<!--Desktop versiya-->
+<div class="w3-hide-small w3-hide-medium">
+    
+</div>
+
+
+
+
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+<style>
+    #sidebar_color {
+        background: #8EB0AF;
+    }
+    #txt {
+        background: #fff;
+        font-size: 16px;
+        color: #000;
+        padding: 4px 12px;
+        margin-left: 12px;
+        border: 1px solid #000;
+    }
+</style>
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        
+        document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
