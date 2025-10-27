@@ -30,7 +30,8 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff}bod
     padding-left: 2px;
     font-size: 26px;
     color: #02A4D3;
-    font-family: ;
+    font-family: "Oswald";
+    font-weight: bold;
 }
 
 /* Mobil */
