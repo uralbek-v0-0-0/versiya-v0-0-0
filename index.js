@@ -1,3 +1,3 @@
-document.getElementById("desktop").innerHTML = "ds";
+document.getElementById("desktop").innerHTML = "";
 document.getElementById("planshet").innerHTML = "";
 document.getElementById("mobil").innerHTML = "";
