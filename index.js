@@ -1,3 +1,3 @@
 document.getElementById("desktop").innerHTML = "";
 document.getElementById("planshet").innerHTML = "";
-document.getElementById("mobil").innerHTML = "<div id='top'><div id='header'><b id='logotip'>Uralbek UZ</b></div></div>   <div id='ds_page_top'><br><br><br><br> <h5 id='sm_baza'>IJTIMOIY MEDIA XUSUSIY BAZASIGA</h5><h2 id='sm_baza'>XUSH KELIBSIZ</h2></div>";
+document.getElementById("mobil").innerHTML = "<div id='top'><div id='header'><b id='logotip'>Uralbek UZ</b></div></div>   <div id='ds_page_top'><br><br><br><br><h5 id='sm_baza'>IJTIMOIY MEDIA XUSUSIY BAZASIGA</h5><h2 id='sm_baza'>XUSH KELIBSIZ</h2></div>";
