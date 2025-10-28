@@ -49,3 +49,20 @@ h3#media{
     font-family: Comic Sans MS;
 }
 
+
+
+
+
+
+
+
+div#sm_media{
+    padding: 0;
+    margin: 0;
+    background: #fef0ec;
+}
+h3#sm_media{
+    text-align: center;
+    font-size: 28px;
+    color: red;
+    font-family: Comic Sans MS;
