@@ -1,1 +1,2 @@
 document.getElementById("makaron").innerHTML = "Media bo'limi tayyor bo'lishi bilan xabardor qilinasiz!";
+document.getElementById("ds_top").innerHTML = "Media bo'limi tayyor bo'lishi bilan xabardor qilinasiz!";
