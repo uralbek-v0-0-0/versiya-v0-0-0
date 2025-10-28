@@ -55,7 +55,14 @@ h3#media{
 
 
 
-
+h2,h4#sm_baza{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #02A4D3;
+    font-family: Arial Verdana Sans-Serif Comic Sans MS;
+}
 div#sm_media{
     padding: 0;
     margin: 0;
