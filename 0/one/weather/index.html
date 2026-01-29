@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O‘zbekiston ob-havo</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background: #f0f4f8;
+}
+h2 { text-align: center; }
+
+.weather-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.city {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.city:hover { transform: translateY(-5px); }
+
+.icon { font-size: 50px; margin-bottom: 8px; }
+
+/* Ranglar */
+.sunny { color: #f1c40f; }        /* Quyosh sariq */
+.cloudy { color: #7f8c8d; }       /* Bulut kulrang */
+.rainy { color: #3498db; }        /* Yomg‘ir ko‘k */
+.snowy { color: #5dade2; }        /* Qor ochko‘k */
+.windy { color: #95a5a6; }        /* Shamol kulrang */
+.mist { color: #bdc3c7; }         /* Yengil shabada / tuman */
+
+.temp { font-size: 24px; font-weight: bold; }
+.desc { font-size: 16px; color: #555; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<h2>O‘zbekiston shaharlarining ob-havo maʼlumotlari</h2>
+<div id="weather" class="weather-grid"></div>
+
+<script>
+const API_KEY = "840a8ec0caec0104a8633e901bdd873b";
+
+const cities = [
+  "Toshkent","Andijon","Buxoro","Jizzax","Namangan",
+  "Qarshi","Urganch","Navoiy","Farg'ona","Nukus","Termiz","Guliston","Samarqand"
+];
+
+// Ob-havo holatini O'zbek tiliga tarjima qilish
+function uzbekDesc(weather) {
+  weather = weather.toLowerCase();
+  if(weather.includes("rain")) return "Yomgʻir";
+  if(weather.includes("snow")) return "Qor";
+  if(weather.includes("cloud")) return "Bulutli";
+  if(weather.includes("wind")) return "Shamolli";
+  if(weather.includes("clear")) return "Havo ochiq";
+  return "Nomaʼlum";
+}
+
+// Ikonka va rang berish
+function getIcon(weather) {
+  weather = weather.toLowerCase();
+  if(weather.includes("rain")) return '<i class="fas fa-cloud-showers-heavy rainy"></i>';
+  if(weather.includes("snow")) return '<i class="fas fa-snowflake snowy"></i>';
+  if(weather.includes("cloud")) return '<i class="fas fa-cloud cloudy"></i>';
+  if(weather.includes("wind")) return '<i class="fas fa-wind windy"></i>';
+  if(weather.includes("clear")) return '<i class="fas fa-sun sunny"></i>';
+  return '<i class="fas fa-smog mist"></i>';
+}
+
+const weatherDiv = document.getElementById("weather");
+
+cities.forEach(city => {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},UZ&units=metric&appid=${API_KEY}`)
+    .then(res => res.json())
+    .then(data => {
+      if(data.main){
+        const icon = getIcon(data.weather[0].main);
+        const desc = uzbekDesc(data.weather[0].main);
+        weatherDiv.innerHTML += `
+          <div class="city">
+            <div class="icon">${icon}</div>
+            <div class="name"><b>${city}</b></div>
+            <div class="temp">${data.main.temp}°C</div>
+            <div class="desc">${desc}</div>
+          </div>
+        `;
+      } else {
+        weatherDiv.innerHTML += `
+          <div class="city">
+            <div class="name"><b>${city}</b></div>
+            <div class="desc">Maʼlumot topilmadi</div>
+          </div>
+        `;
+      }
+    })
+    .catch(err => {
+      weatherDiv.innerHTML += `
+        <div class="city">
+          <div class="name"><b>${city}</b></div>
+          <div class="desc">Xato yuz berdi</div>
+        </div>
+      `;
+    });
+});
+</script>
+
+</body>
+</html>
