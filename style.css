@@ -6,11 +6,7 @@ body{margin:0}a{text-decoration:none}svg{padding:0;margin:0}
 #sm_header{padding-top:5.5px;padding-left:22px;padding-bottom:5px}
 #sm_menu{text-decoration:none;font-size:26px}
 #sm_logotip {padding-left:16px;font-size:24.5px}
-#sm_menu,#sm_logotip{
-    color: #02A4D3;
-    font-family: "Oswald";
-    font-weight: bold;
-}
+#sm_menu,#sm_logotip{color: #02A4D3;font-family:"Oswald";font-weight:bold}
 
 
 
