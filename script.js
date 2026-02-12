@@ -1,5 +1,5 @@
 /* ===== SOZLAMALAR ===== */
-const WEATHER_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
+const WEATHER_API_KEY = "840a8ec0caec0104a8633e901bdd873b";
 const CITY = "Tashkent";
 const RATE_API = "https://api.exchangerate.host/latest?base=USD&symbols=UZS";
 
