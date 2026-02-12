@@ -9,7 +9,7 @@ function w3_close() {
 
 /* ===== SOZLAMALAR ===== */
 const WEATHER_API_KEY = "840a8ec0caec0104a8633e901bdd873b";
-const CITY = "Samarkand";
+const CITY = "Tashkent";
 
 /* ===== 1. TOSHKENT VAQTI ===== */
 function updateTime() {
