@@ -23,7 +23,17 @@
 
 <div id="sm_top" style="z-index:1"><div id="sm_header"><b id="sm_menu" onclick="openMenu()" style="cursor:pointer;">&#9776;</b><b id="sm_logotip">Uralbek UZ</b></div></div>
 
-<div id="sidebar" class="w3-sidebar w3-bar-block w3-collapse w3-animate-left">
+<div id="mobileMenu" style="
+    position:fixed;
+    top:60px;
+    left:-280px;
+    width:280px;
+    height:calc(100% - 60px);
+    background:#111;
+    color:white;
+    transition:0.3s;
+    z-index:2;
+">
     <p>Menu 1</p>
     <p>Menu 2</p>
     <p>Menu 3</p>
@@ -58,34 +68,27 @@
 </body></html>
 
 <script>
-let sidebarOpen = false;
+function openMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.style.left = "0";
 
-function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-
-    if (!sidebarOpen) {
-        sidebar.style.left = "0";
-        sidebarOpen = true;
-
-        // sahifaning istalgan joyini bosganda yopish
-        document.addEventListener("click", outsideClick);
-    } else {
-        closeSidebar();
-    }
+    // Sahifani bosganda yopish
+    setTimeout(() => {
+        document.addEventListener("click", closeOnOutside);
+    }, 10);
 }
 
-function closeSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.style.left = "-250px";
-    sidebarOpen = false;
-    document.removeEventListener("click", outsideClick);
+function closeMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.style.left = "-280px";
+    document.removeEventListener("click", closeOnOutside);
 }
 
-function outsideClick(e) {
-    const sidebar = document.getElementById("sidebar");
+function closeOnOutside(e) {
+    const menu = document.getElementById("mobileMenu");
 
-    if (!sidebar.contains(e.target) && e.target.innerText !== "☰") {
-        closeSidebar();
+    if (!menu.contains(e.target) && e.target.innerText !== "☰") {
+        closeMenu();
     }
 }
 </script>
