@@ -5,7 +5,7 @@ body{margin:0}a{text-decoration:none}svg{padding:0;margin:0}
 #tk,#tk-time{margin-left:12px}
 #tk-weather{margin-right:12px;float:right!important}
 #tk-weather,#tk-time{color:#fff;font-size:16px}
-#tk{font-size: 12px}
+#tk{font-size: 12px;color: #fff}
 #sm_top{position:fixed;width:100%;z-index:6;top:0;background:#fff;box-shadow:0 4px 4px 0 rgba(0,0,0,0.12),0 4px 4px 0 rgba(0,0,0,0.20)}
 #sm_header{padding-top:5.5px;padding-left:22px;padding-bottom:4px}
 #sm_menu{text-decoration:none;font-size:26px}
