@@ -23,20 +23,11 @@
 
 <div id="sm_top" style="z-index:1"><div id="sm_header"><b id="sm_menu" onclick="openMenu()" style="cursor:pointer;">&#9776;</b><b id="sm_logotip">Uralbek UZ</b></div></div>
 
-<div id="mobileMenu" style="
-    position:fixed;
-    top:0;
-    left:-280px;
-    width:250px;
-    height:calc(100% - 60px);
-    background:#111;
-    color:white;
-    transition:0.3s;
-    z-index:0;
-">
-    <p>Menu 1</p>
-    <p>Menu 2</p>
-    <p>Menu 3</p>
+<div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
 
