@@ -1,3 +1,12 @@
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
 /* ===== SOZLAMALAR ===== */
 const WEATHER_API_KEY = "840a8ec0caec0104a8633e901bdd873b";
 const CITY = "Tashkent";
@@ -75,13 +84,3 @@ async function fetchRate() {
 
 fetchRate();
 setInterval(fetchRate, 10 * 60 * 1000);
-
-
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
