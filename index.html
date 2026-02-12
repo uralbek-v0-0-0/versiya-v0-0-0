@@ -21,39 +21,30 @@
 <!-- SM Mobil versiya -->
 <div class="w3-hide-medium w3-hide-large">
 
+<div id="sm_top" style="z-index:1"><div id="sm_header"><b id="sm_menu" onclick="openSidebar()">&#9776;</b><b id="sm_logotip">Uralbek UZ</b></div></div>
 
-
-
-
-<div id="overlay" onclick="closeSidebar()" style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: none;
-"></div>
-
-<!-- Yon menyu -->
 <div id="sidebar" style="
     position: fixed;
-    top: 0;
+    top: 60px; /* HEADER balandligi */
     left: -250px;
     width: 250px;
-    height: 100%;
+    height: calc(100% - 60px);
     background: #222;
     color: white;
-    padding: 20px;
     transition: 0.3s;
-    z-index: 1000;
+    z-index: 0; /* headerdan past */
 ">
-    <p><a href="#" style="color:white;">Bosh sahifa</a></p>
-    <p><a href="#" style="color:white;">Yangiliklar</a></p>
-    <p><a href="#" style="color:white;">Aloqa</a></p>
+    <p>Menu 1</p>
+    <p>Menu 2</p>
+    <p>Menu 3</p>
 </div>
 
-<div id="sm_top" style="z-index:1"><div id="sm_header"><b id="sm_menu" onclick="openSidebar()">&#9776;</b><b id="sm_logotip">Uralbek UZ</b></div></div>
+
+
+
+
+
+
 
 
 
