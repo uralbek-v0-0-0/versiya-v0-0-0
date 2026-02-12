@@ -8,9 +8,8 @@ function w3_close() {
 }
 
 /* ===== SOZLAMALAR ===== */
-const WEATHER_API_KEY = "840a8ec0caec0104a8633e901bdd873b";
+const WEATHER_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
 const CITY = "Tashkent";
-const RATE_API = "https://api.exchangerate.host/latest?base=USD&symbols=UZS";
 
 /* ===== 1. TOSHKENT VAQTI ===== */
 function updateTime() {
@@ -64,23 +63,3 @@ async function fetchWeather() {
 
 fetchWeather();
 setInterval(fetchWeather, 10 * 60 * 1000);
-
-
-/* ===== 3. USD KURSI ===== */
-async function fetchRate() {
-    try {
-        const res = await fetch(RATE_API);
-        const data = await res.json();
-
-        const rate = Number(data.rates.UZS).toFixed(0);
-
-        document.getElementById("usd-rate").textContent =
-            "USD " + rate + " UZS";
-    } catch {
-        document.getElementById("usd-rate").textContent =
-            "USD --";
-    }
-}
-
-fetchRate();
-setInterval(fetchRate, 10 * 60 * 1000);
