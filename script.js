@@ -1,18 +1,9 @@
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
 /* ===== SOZLAMALAR ===== */
-const WEATHER_API_KEY = "840a8ec0caec0104a8633e901bdd873b";
-const CITY_QUERY = "Tashkent";
+const WEATHER_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
+const CITY = "Tashkent";
 const RATE_API = "https://api.exchangerate.host/latest?base=USD&symbols=UZS";
 
-/* ===== VAQT (Toshkent) ===== */
+/* ===== 1. TOSHKENT VAQTI ===== */
 function updateTime() {
     const now = new Date(
         new Date().toLocaleString("en-US", { timeZone: "Asia/Tashkent" })
@@ -23,14 +14,15 @@ function updateTime() {
     const s = String(now.getSeconds()).padStart(2, "0");
 
     document.getElementById("tk-time").textContent =
-        `${h}:${m}:${s}`;
+        h + ":" + m + ":" + s;
 }
 
 setInterval(updateTime, 1000);
 updateTime();
 
-/* ===== OB-HAVO ===== */
-function weatherIcon(main) {
+
+/* ===== 2. OB-HAVO ===== */
+function getWeatherIcon(main) {
     switch (main) {
         case "Clear": return "☀️";
         case "Clouds": return "☁️";
@@ -47,15 +39,15 @@ function weatherIcon(main) {
 async function fetchWeather() {
     try {
         const res = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${CITY_QUERY}&units=metric&appid=${WEATHER_API_KEY}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&units=metric&appid=${WEATHER_API_KEY}`
         );
         const data = await res.json();
 
         const temp = Math.round(data.main.temp) + "°C";
-        const icon = weatherIcon(data.weather[0].main);
+        const icon = getWeatherIcon(data.weather[0].main);
 
         document.getElementById("tk-weather").textContent =
-            `${icon} ${temp}`;
+            icon + " " + temp;
     } catch {
         document.getElementById("tk-weather").textContent = "--°C";
     }
@@ -64,7 +56,8 @@ async function fetchWeather() {
 fetchWeather();
 setInterval(fetchWeather, 10 * 60 * 1000);
 
-/* ===== USD KURSI ===== */
+
+/* ===== 3. USD KURSI ===== */
 async function fetchRate() {
     try {
         const res = await fetch(RATE_API);
@@ -73,7 +66,7 @@ async function fetchRate() {
         const rate = Number(data.rates.UZS).toFixed(0);
 
         document.getElementById("usd-rate").textContent =
-            `USD ${rate} UZS`;
+            "USD " + rate + " UZS";
     } catch {
         document.getElementById("usd-rate").textContent =
             "USD --";
@@ -82,3 +75,13 @@ async function fetchRate() {
 
 fetchRate();
 setInterval(fetchRate, 10 * 60 * 1000);
+
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
