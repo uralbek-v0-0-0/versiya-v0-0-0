@@ -68,14 +68,35 @@
 </body></html>
 
 <script>
-function openSidebar() {
-    document.getElementById("sidebar").style.left = "0";
-    document.getElementById("overlay").style.display = "block";
+let sidebarOpen = false;
+
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+
+    if (!sidebarOpen) {
+        sidebar.style.left = "0";
+        sidebarOpen = true;
+
+        // sahifaning istalgan joyini bosganda yopish
+        document.addEventListener("click", outsideClick);
+    } else {
+        closeSidebar();
+    }
 }
 
 function closeSidebar() {
-    document.getElementById("sidebar").style.left = "-250px";
-    document.getElementById("overlay").style.display = "none";
+    const sidebar = document.getElementById("sidebar");
+    sidebar.style.left = "-250px";
+    sidebarOpen = false;
+    document.removeEventListener("click", outsideClick);
+}
+
+function outsideClick(e) {
+    const sidebar = document.getElementById("sidebar");
+
+    if (!sidebar.contains(e.target) && e.target.innerText !== "☰") {
+        closeSidebar();
+    }
 }
 </script>
 
