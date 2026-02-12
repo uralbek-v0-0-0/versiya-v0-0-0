@@ -75,7 +75,16 @@
 
 
 <img src="svg/menu_footer.svg" alt="footer" width="200" oncontextmenu="return false;" draggable="false">
-
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+</script>
+<script>
+document.addEventListener("dragstart", function(e) {
+    e.preventDefault();
+});
+</script>
 
 
 </div>
