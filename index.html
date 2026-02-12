@@ -23,13 +23,15 @@
 
 <div id="sm_top" style="z-index:1"><div id="sm_header"><b id="sm_menu" onclick="openMenu()" style="cursor:pointer;">&#9776;</b><b id="sm_logotip">Uralbek UZ</b></div></div>
 
-<div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
+<div class="w3-sidebar w3-bar-block" style="display:none;z-index:0" id="mySidebar">
   <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
+<!-- Overlay -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
 
 
