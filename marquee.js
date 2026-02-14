@@ -1,2 +1,2 @@
 document.getElementById("marquee").innerHTML = 'Iltimos kuting! Sahifalar qayta ishlab chiqilmoqda... &#160; &#160; <b id="allWeather"></b>. &#160; &#160; <b id="yillar"></b>            ';
-document.getElementById('yillar').innerHTML = 'Oʻzbekistonda yil nomlari: 1991-yil "Alisher Navoiy" yili, 1992-yil "Hamshiralar" yili, 1993-yil "Ahmad Yassaviy" yili, 1994-yil "Mirzo Ulugʻbek" yili,1995-yil "Abu Ali ibn Sino" yili 1996-yil "Amir Temur" yili ';
+document.getElementById('yillar').innerHTML = 'Oʻzbekistonda yil nomlari: 1991-yil "Alisher Navoiy" yili, 1992-yil "Hamshiralar" yili, 1993-yil "Ahmad Yassaviy" yili, 1994-yil "Mirzo Ulugʻbek" yili, 1995-yil "Abu Ali ibn Sino" yili, 1996-yil "Amir Temur" yili, 1997-yil "Inson manfaatlari" yili ';
