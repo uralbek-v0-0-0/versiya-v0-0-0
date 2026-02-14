@@ -1,0 +1,28 @@
+<script>
+const TOKEN = "2d250423536e62c842acf5c33f03e1f9724905016e3766d1afc42dd334244ec7";
+const BASE_URL = "https://devsms.uz/api";
+
+// SMS Yuborish
+async function sendSMS(phone, message) {
+    const response = await fetch(`${BASE_URL}/send_sms.php`, {
+        method: "POST",
+        headers: {
+            "Authorization": `Bearer ${TOKEN}`,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ phone, message })
+    });
+    return response.json();
+}
+
+// Balansni olish
+async function getBalance() {
+    const response = await fetch(`${BASE_URL}/get_balance.php`, {
+        headers: { "Authorization": `Bearer ${TOKEN}` }
+    });
+    return response.json();
+}
+
+// Ishlatish
+sendSMS("998901234567", "Assalomu alaykum, tizimimizga xush kelibsiz!").then(console.log);
+</script>
