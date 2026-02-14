@@ -71,7 +71,7 @@ setInterval(fetchWeather, 10 * 60 * 1000);
 
 
 
-<script>
+
 async function barchaObHavo() {
 
     const shaharlar = [
@@ -122,4 +122,3 @@ async function barchaObHavo() {
 
 barchaObHavo();
 setInterval(barchaObHavo, 600000); // 10 daqiqada yangilanadi
-</script>
