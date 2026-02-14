@@ -1,1 +1,1 @@
-marquee
+document.getElementById("marquee").innerHTML = "";
