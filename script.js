@@ -63,3 +63,34 @@ async function fetchWeather() {
 
 fetchWeather();
 setInterval(fetchWeather, 10 * 60 * 1000);
+
+
+
+
+
+
+
+async function obHavo() {
+    // Open-Meteo bepul API (Toshkent koordinatasi)
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=41.3111&longitude=69.2797&current_weather=true";
+
+    const res = await fetch(url);
+    const data = await res.json();
+
+    const temp = Math.round(data.current_weather.temperature);
+    const code = data.current_weather.weathercode;
+
+    // ob-havo belgisi
+    let belgi = "☀️";
+    if ([1,2,3].includes(code)) belgi = "⛅";
+    if ([45,48].includes(code)) belgi = "🌫️";
+    if ([51,53,55,61,63,65,80,81,82].includes(code)) belgi = "🌧️";
+    if ([71,73,75,85,86].includes(code)) belgi = "❄️";
+    if ([95,96,99].includes(code)) belgi = "⛈️";
+
+    document.getElementById("weather").textContent =
+        "Toshkent : " + belgi + " " + temp + "°C";
+}
+
+obHavo();
+setInterval(obHavo, 600000); // har 10 daqiqada yangilanadi
