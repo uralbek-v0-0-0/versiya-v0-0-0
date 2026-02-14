@@ -13,7 +13,7 @@ body{margin:0}a{text-decoration:none}svg{padding:0;margin:0}
 #sm_menu,#sm_logotip{color: #02A4D3;font-family:"Oswald";font-weight:bold;-webkit-user-select:none;-ms-user-select:none;user-select:none}
 #marquee{
     background: #333;
-    
+    color: #fff;
     padding: 0;
     margin: 0;
     font-size: 12px;
