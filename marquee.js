@@ -1,1 +1,1 @@
-document.getElementById("marquee").innerHTML = "<b>Iltimos kiting! Sahifalar qayta ishlab chiqilmoqda...</b> ";
+document.getElementById("marquee").innerHTML = "<b>Iltimos kuting! Sahifalar qayta ishlab chiqilmoqda...</b> ";
