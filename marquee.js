@@ -1,2 +1,2 @@
-document.getElementById("marquee").innerHTML = '<b>Iltimos kuting! Sahifalar qayta ishlab chiqilmoqda...</b> &#160; &#160; <b id="allWeather"></b>. &#160; &#160; <b id            ';
+document.getElementById("marquee").innerHTML = '<b>Iltimos kuting! Sahifalar qayta ishlab chiqilmoqda...</b> &#160; &#160; <b id="allWeather"></b>. &#160; &#160; <b id="yillar"></b>            ';
 document.getElementById('yillar').innerHTML = 'Oʻzbekistonda yil nomlari: 1991-yil "Alisher Navoiy" yili, 1992-yil "Hamshiralar" yili, 1993-yil "Ahmad Yassaviy" yili, 1994-yil "Mirzo Ulugʻbek" yili, ';
