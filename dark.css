@@ -1,0 +1,87 @@
+
+/* Kunduzgi rejim */
+:root {
+    color-scheme: light;
+
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --header-bg: #f1f1f1;
+    --card-bg: #ffffff;
+    --border-color: #dddddd;
+    --link-color: #1565c0;
+}
+
+/* Tungi rejim */
+[data-theme="dark"] {
+    color-scheme: dark;
+
+    --bg-color: #121212;
+    --text-color: #eeeeee;
+    --header-bg: #222222;
+    --card-bg: #1e1e1e;
+    --border-color: #444444;
+    --link-color: #64b5f6;
+}
+
+/* Umumiy sahifa */
+html,
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color .25s, color .25s;
+}
+
+/* W3.CSS elementlari */
+body,
+.w3-container,
+.w3-panel,
+.w3-card,
+.w3-card-2,
+.w3-card-4,
+.w3-table,
+.w3-table-all,
+.w3-modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+/* Qadalgan header */
+.w3-top,
+.w3-header {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+}
+
+/* Header ichidagi elementlar */
+.w3-top .w3-bar,
+.w3-top .w3-bar-item,
+.w3-header {
+    color: var(--text-color);
+}
+
+/* Havolalar */
+a {
+    color: var(--link-color);
+}
+
+/* Chegaralar */
+.w3-card,
+.w3-card-2,
+.w3-card-4,
+.w3-table-all,
+hr {
+    border-color: var(--border-color);
+}
+
+/* Tugmalar */
+#themeToggle {
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Kontent header ostidan boshlanishi uchun */
+.content {
+    padding-top: 70px;
+}
